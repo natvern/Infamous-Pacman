@@ -3,7 +3,7 @@
 #    AndrewID  : srahmoun
 #    File      : Front-end Graphical User Interface for the infamous PacMan game
 
-import * from Tkinter
+from Tkinter import *
 
 class GameFrame:
     # Initialize our first Frame
