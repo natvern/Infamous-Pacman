@@ -17,16 +17,16 @@ class Pacman:
     def movePacman(self,direction,x,y):
         if direction == "up":
             if self.board[self.xPosition-1][self.yPosition] != 2:
-                self.move((self.xPosition-1,self.yPosition,x,y))
+                self.move([self.xPosition-1,self.yPosition],x,y)
         elif direction == "down":
             if self.board[(self.xPosition+1)%21][self.yPosition] != 2:
-                self.move(( (self.xPosition+1)%21 ,self.yPosition,x,y))
+                self.move([(self.xPosition+1)%21 ,self.yPosition],x,y)
         elif direction == "right":
             if self.board[self.xPosition][(self.yPosition+1)%21] != 2:
-                self.move((self.xPosition, (self.yPosition+1)%21),x,y)
+                self.move([self.xPosition, (self.yPosition+1)%21],x,y)
         elif direction == "left":
             if self.board[self.xPosition][self.yPosition-1] != 2:
-                self.move((self.xPosition,self.yPosition-1),x,y)
+                self.move([self.xPosition,self.yPosition-1],x,y)
         else:
             raise ValueError
 

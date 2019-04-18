@@ -1,14 +1,14 @@
 #    Project: The infamous Pacman
-#    Name      : Samar Rahmouni
 #    AndrewID  : srahmoun
 
-#    File Created: 25th November 2018
+#    Created: 11/25/2018
 #    Modification History:
-#    Start                End
-#    20:29                22:51
-#    4/2/2019 - 19:00 
-#    4/4/2019 - 14:49
-#             - 17:54
+#    11/25/2018 - 20:29   
+#    04/02/2019 - 19:00 
+#    04/04/2019 - 14:49
+#               - 17:54
+#    04/16/2019 - 17:36
+#    04/18/2019 - 13:47
 
 import gui, engine
 import tkinter
@@ -54,7 +54,6 @@ for i in range(21 * 21):
     board[i // 21][i % 21] = int(drawMap[i])
 
 infamousPac = engine.Pacman(board, 15, 10)
-infamousMonster = engine.Monster(board, 10, 7)
-frame = gui.GameFrame(root, infamousPac, infamousMonster)
+frame = gui.GameFrame(root, infamousPac)
 root.mainloop()
 
